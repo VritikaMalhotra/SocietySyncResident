@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Features.AddVehicle">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add_vehicle_1"></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Add Vehicle"
+            android:textAlignment="center"
+            android:textSize="40dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Enter your 2 wheeler/4 wheeler number in format XX XX XX XXXX"
+            android:textAlignment="center"
+            android:textSize="18dp">
+
+        </TextView>
+
+    <EditText
+        android:id="@+id/editTextNumberPlate"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/complaint_text_background"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:ems="10"
+        android:hint="Number plate"
+        android:paddingLeft="20dp"
+        android:textSize="25dp"
+        android:inputType="textPersonName"
+        />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/buttonAddVehicleAddVehicle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SUBMIT"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="32dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:background="@drawable/background_shade_2"
+                android:textColor="@color/white"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
